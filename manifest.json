@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "RareJob Daily News Article Audio Playback Rate",
+  "description": "Control RareJob daily news article audio playback rate.",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.rarejob.com/dna",
+        "https://www.rarejob.com/dna/",
+        "https://www.rarejob.com/dna/*/*/*/*",
+        "https://www.rarejob.com/dna/*/*/*/*/"
+      ],
+      "js": [
+        "vendor/javascripts/jquery-3.2.1.min.js",
+        "app/main.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "app/images/stopwatch.png"
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
+}
